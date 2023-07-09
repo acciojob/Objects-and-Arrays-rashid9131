@@ -1,1 +1,30 @@
-/* Your CSS code here. */
+#animation-container {
+  width: 500px;
+  height: 500px;
+  background-color: #f1f1f1;
+  position: relative;
+  overflow: hidden;
+}
+
+#character {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateX(-100%);
+  animation: characterAnimation 5s infinite;
+}
+
+@keyframes characterAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
